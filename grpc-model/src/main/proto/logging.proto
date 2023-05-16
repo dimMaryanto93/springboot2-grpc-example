@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package com.maryanto.dimas.example.grpc;
+
+option java_multiple_files = true;
+option java_package = "com.maryanto.dimas.example.grpc.lib";
+option java_outer_classname = "LoggingGrpcProto";
+
+// The greeting service definition.
+service ExampleService {
+  // Sends a greeting
+  rpc SayHello (RequestData) returns (ResponseData) {
+  }
+}
+
+// The request message containing the user's name.
+message RequestData {
+  string quetion = 1;
+}
+
+// The response message containing the greetings
+message ResponseData {
+  string answare = 1;
+}
