@@ -17,6 +17,7 @@
     <modules>
         <module>grpc-model</module>
         <module>grpc-server</module>
+        <module>grpc-client</module>
     </modules>
 
     <properties>

@@ -12,7 +12,7 @@ public class ExampleGrpcService extends ExampleServiceGrpc.ExampleServiceImplBas
     @Override
     public void sayHello(RequestData request, StreamObserver<ResponseData> responseObserver) {
         ResponseData reply = ResponseData.newBuilder()
-                .setAnsware(request.getQuetion() + ": Bisa")
+                .setAnsware(request.getQuetion() + ": Dimas Maryanto")
                 .build();
         responseObserver.onNext(reply);
         responseObserver.onCompleted();
